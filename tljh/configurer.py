@@ -231,6 +231,7 @@ def update_user_environment(c, config):
     # Set default application users are launched into
     if user_env["default_app"] == "jupyterlab":
         c.Spawner.default_url = "/tree"
+    c.Spawner.default_url = "/tree"
 
 
 def update_user_account_config(c, config):
