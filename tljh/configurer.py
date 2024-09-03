@@ -229,8 +229,11 @@ def update_user_environment(c, config):
     user_env = config["user_environment"]
 
     # Set default application users are launched into
-    if user_env["default_app"] == "jupyterlab":
-        c.Spawner.default_url = "/tree"
+    # if user_env["default_app"] == "jupyterlab":
+    #     c.Spawner.default_url = "/lab"
+
+    # hardcoded default application to notebook, 
+    # because jupyterlab's builtin notebook is v7 on which matplotlib does not work
     c.Spawner.default_url = "/tree"
 
 
