@@ -489,7 +489,7 @@ def main():
     if args.version or not bootstrap_pip_spec:
         version_to_resolve = args.version or "latest"
         bootstrap_pip_spec = (
-            "git+https://github.com/jupyterhub/the-littlest-jupyterhub.git@{}".format(
+            "git+https://github.com/lihuapinghust/the-littlest-jupyterhub.git@{}".format(
                 _resolve_git_version(version_to_resolve)
             )
         )
